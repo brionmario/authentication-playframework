@@ -1,0 +1,51 @@
+@()
+
+@main("Login") {
+
+<html>
+
+  <head>
+    <title>Login</title>
+      <!-- routes.Assets.at("stylesheets/play.css") didn't work -->
+    <link rel="stylesheet" type="text/css" href='@routes.Assets.versioned("stylesheets/bootstrap.min.css")'>
+    <link rel="stylesheet" type="text/css" href='@routes.Assets.versioned("stylesheets/play.css")'>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <br><br><br><br><br>
+      </div>
+    </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="text-center">LOG IN</h1>
+            <h3 class="text-center  login-title brion-small-title">Please enter your credentials to login to the system.</h3>
+            <br><br>
+            <div class="">
+
+              <!--The form action is passed using the respective route. This form passes the values to the getUser()
+              method in the AuthController class-->
+              <form class="form-signin" method="POST" action="@routes.AuthenticationController.getUser()">
+                <input type="text" class="form-control" name="email" placeholder="Email"  required autofocus>
+                <br>
+                <input type="password" class="form-control" name="password" placeholder="Password"  required>
+                <br>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">
+                  Log in</button>
+                <span class="clearfix"></span>
+              </form>
+
+            </div>
+
+            <!-- Directs the user to the sign up page -->
+            <a href="@routes.AuthenticationController.signup()" class="text-center new-account">Create an account</a>
+
+
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
+}
