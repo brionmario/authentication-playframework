@@ -9202,3 +9202,181 @@ Total time: 5 s, completed 15-Mar-2017 02:59:41
 > server-post-command-error-handler
 > server-post-command-cleanup
 > server-handle-next-server-request
+> {file:/Users/brionsilva/Desktop/IIT/SDGP/Play%20Projects/play-java/}root/*:playForkConfig
+Evaluating tasks: *:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@7427f23a, check cycles: false
+Total time: 0 s, completed 15-Mar-2017 02:59:53
+> server-post-command-cleanup
+> server-handle-next-server-request
+> root/playForkNotifyStart http://localhost:9000
+Evaluating tasks: *:playForkNotifyStart
+Running task... Cancel: sbt.server.ServerTaskCancellation@6d644b75, check cycles: false
+Total time: 0 s, completed 15-Mar-2017 03:00:00
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@1c58bd68, check cycles: false
+
+Initial source changes: 
+	removed:Set(/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/target/scala-2.11/twirl/main/views/html/error.template.scala)
+	added: Set(/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/target/scala-2.11/twirl/main/views/html/message.template.scala)
+	modified: Set(/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/app/controllers/AuthenticationController.java, /Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/target/scala-2.11/twirl/main/views/html/index.template.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/target/scala-2.11/twirl/main/views/html/error.template.scala, /Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/app/controllers/AuthenticationController.java, /Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/target/scala-2.11/twirl/main/views/html/message.template.scala, /Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/target/scala-2.11/twirl/main/views/html/index.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/target/scala-2.11/twirl/main/views/html/error.template.scala, /Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/app/controllers/AuthenticationController.java, /Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/target/scala-2.11/twirl/main/views/html/message.template.scala, /Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/target/scala-2.11/twirl/main/views/html/index.template.scala)
+
+Read from stdout: Compiling 2 Scala sources and 1 Java source to /Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/target/scala-2.11/classes...
+Compiling 2 Scala sources and 1 Java source to /Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Running cached compiler 33516ebd, interfacing (CompilerInterface) with Scala compiler version 2.11.8
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/classes:/Users/brionsilva/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar
+	-classpath
+	/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/target/scala-2.11/classes:/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/lib/javax.annotation.jar:/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/lib/javax.ejb.jar:/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/lib/javax.jms.jar:/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/lib/javax.persistence.jar:/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/lib/javax.resource.jar:/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/lib/javax.servlet.jsp.jar:/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/lib/javax.servlet.jsp.jstl.jar:/Users/brionsilva/Desktop/IIT/SDGP/Play/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/Users/brionsilva/Desktop/IIT/SDGP/Play/repository/org.apache.commons/commons-lang3/3.4/jars/commons-lang3.jar:/Users/brionsilva/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/brionsilva/Desktop/IIT/SDGP/Play/repository/com.typesafe.play/play-enhancer/1.1.0/jars/play-enhancer.jar:/Users/brionsilva/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.5.12.jar:/Users/brionsilva/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.5.12.jar:/Users/brionsilva/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.5.12.jar:/Users/brionsilva/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.5.12.jar:/Users/brionsilva/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.5.12.jar:/Users/brionsilva/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/Users/brionsilva/Desktop/IIT/SDGP/Play/repository/com.typesafe/config/1.3.0/bundles/config.jar:/Users/brionsilva/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.5.12.jar:/Users/brionsilva/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.5.12.jar:/Users/brionsilva/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.5.12.jar:/Users/brionsilva/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.9.6.jar:/Users/brionsilva/Desktop/IIT/SDGP/Play/repository/org.joda/joda-convert/1.8.1/jars/joda-convert.jar:/Users/brionsilva/Desktop/IIT/SDGP/Play/repository/org.scala-lang/scala-reflect/2.11.7/jars/scala-reflect.jar:/Users/brionsilva/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.7.8.jar:/Users/brionsilva/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.7.8.jar:/Users/brionsilva/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.7.8.jar:/Users/brionsilva/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/bundles/jackson-datatype-jdk8-2.7.8.jar:/Users/brionsilva/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/bundles/jackson-datatype-jsr310-2.7.8.jar:/Users/brionsilva/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.5.12.jar:/Users/brionsilva/Desktop/IIT/SDGP/Play/repository/org.slf4j/slf4j-api/1.7.21/jars/slf4j-api.jar:/Users/brionsilva/Desktop/IIT/SDGP/Play/repository/org.slf4j/jul-to-slf4j/1.7.21/jars/jul-to-slf4j.jar:/Users/brionsilva/Desktop/IIT/SDGP/Play/repository/org.slf4j/jcl-over-slf4j/1.7.21/jars/jcl-over-slf4j.jar:/Users/brionsilva/.ivy2/cache/com.typesafe.play/play-streams_2.11/jars/play-streams_2.11-2.5.12.jar:/Users/brionsilva/Desktop/IIT/SDGP/Play/repository/org.reactivestreams/reactive-streams/1.0.0/jars/reactive-streams.jar:/Users/brionsilva/.ivy2/cache/com.typesafe.akka/akka-stream_2.11/jars/akka-stream_2.11-2.4.14.jar:/Users/brionsilva/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.14.jar:/Users/brionsilva/Desktop/IIT/SDGP/Play/repository/org.scala-lang.modules/scala-java8-compat_2.11/0.7.0/bundles/scala-java8-compat_2.11.jar:/Users/brionsilva/Desktop/IIT/SDGP/Play/repository/com.typesafe/ssl-config-core_2.11/0.2.1/bundles/ssl-config-core_2.11.jar:/Users/brionsilva/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar:/Users/brionsilva/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.4.14.jar:/Users/brionsilva/Desktop/IIT/SDGP/Play/repository/commons-codec/commons-codec/1.10/jars/commons-codec.jar:/Users/brionsilva/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/brionsilva/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/brionsilva/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/brionsilva/Desktop/IIT/SDGP/Play/repository/com.google.inject/guice/4.0/jars/guice.jar:/Users/brionsilva/Desktop/IIT/SDGP/Play/repository/javax.inject/javax.inject/1/jars/javax.inject.jar:/Users/brionsilva/Desktop/IIT/SDGP/Play/repository/aopalliance/aopalliance/1.0/jars/aopalliance.jar:/Users/brionsilva/Desktop/IIT/SDGP/Play/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/Users/brionsilva/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.5.12.jar:/Users/brionsilva/Desktop/IIT/SDGP/Play/repository/org.yaml/snakeyaml/1.16/bundles/snakeyaml.jar:/Users/brionsilva/Desktop/IIT/SDGP/Play/repository/org.hibernate/hibernate-validator/5.2.4.Final/jars/hibernate-validator.jar:/Users/brionsilva/Desktop/IIT/SDGP/Play/repository/javax.validation/validation-api/1.1.0.Final/jars/validation-api.jar:/Users/brionsilva/Desktop/IIT/SDGP/Play/repository/javax.el/javax.el-api/3.0.0/jars/javax.el-api.jar:/Users/brionsilva/Desktop/IIT/SDGP/Play/repository/org.springframework/spring-context/4.2.7.RELEASE/jars/spring-context.jar:/Users/brionsilva/Desktop/IIT/SDGP/Play/repository/org.springframework/spring-core/4.2.7.RELEASE/jars/spring-core.jar:/Users/brionsilva/Desktop/IIT/SDGP/Play/repository/org.springframework/spring-beans/4.2.7.RELEASE/jars/spring-beans.jar:/Users/brionsilva/Desktop/IIT/SDGP/Play/repository/org.reflections/reflections/0.9.10/jars/reflections.jar:/Users/brionsilva/Desktop/IIT/SDGP/Play/repository/com.google.guava/guava/19.0/bundles/guava.jar:/Users/brionsilva/Desktop/IIT/SDGP/Play/repository/net.jodah/typetools/0.4.4/bundles/typetools.jar:/Users/brionsilva/Desktop/IIT/SDGP/Play/repository/com.google.code.findbugs/jsr305/3.0.1/jars/jsr305.jar:/Users/brionsilva/Desktop/IIT/SDGP/Play/repository/org.apache.tomcat/tomcat-servlet-api/8.0.33/jars/tomcat-servlet-api.jar:/Users/brionsilva/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.5.12.jar:/Users/brionsilva/Desktop/IIT/SDGP/Play/repository/com.typesafe.netty/netty-reactive-streams-http/1.0.8/jars/netty-reactive-streams-http.jar:/Users/brionsilva/Desktop/IIT/SDGP/Play/repository/com.typesafe.netty/netty-reactive-streams/1.0.8/jars/netty-reactive-streams.jar:/Users/brionsilva/Desktop/IIT/SDGP/Play/repository/io.netty/netty-handler/4.0.41.Final/jars/netty-handler.jar:/Users/brionsilva/Desktop/IIT/SDGP/Play/repository/io.netty/netty-buffer/4.0.41.Final/jars/netty-buffer.jar:/Users/brionsilva/Desktop/IIT/SDGP/Play/repository/io.netty/netty-common/4.0.41.Final/jars/netty-common.jar:/Users/brionsilva/Desktop/IIT/SDGP/Play/repository/io.netty/netty-transport/4.0.41.Final/jars/netty-transport.jar:/Users/brionsilva/Desktop/IIT/SDGP/Play/repository/io.netty/netty-codec/4.0.41.Final/jars/netty-codec.jar:/Users/brionsilva/Desktop/IIT/SDGP/Play/repository/io.netty/netty-codec-http/4.0.41.Final/jars/netty-codec-http.jar:/Users/brionsilva/Desktop/IIT/SDGP/Play/repository/io.netty/netty-transport-native-epoll/4.0.41.Final/jars/netty-transport-native-epoll-linux-x86_64.jar:/Users/brionsilva/.ivy2/cache/com.typesafe.play/play-logback_2.11/jars/play-logback_2.11-2.5.12.jar:/Users/brionsilva/Desktop/IIT/SDGP/Play/repository/ch.qos.logback/logback-classic/1.1.7/jars/logback-classic.jar:/Users/brionsilva/Desktop/IIT/SDGP/Play/repository/ch.qos.logback/logback-core/1.1.7/jars/logback-core.jar:/Users/brionsilva/.ivy2/cache/com.typesafe.play/play-java-jpa_2.11/jars/play-java-jpa_2.11-2.5.12.jar:/Users/brionsilva/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.11/jars/play-java-jdbc_2.11-2.5.12.jar:/Users/brionsilva/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.5.12.jar:/Users/brionsilva/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.5.12.jar:/Users/brionsilva/Desktop/IIT/SDGP/Play/repository/com.jolbox/bonecp/0.8.0.RELEASE/bundles/bonecp.jar:/Users/brionsilva/Desktop/IIT/SDGP/Play/repository/com.zaxxer/HikariCP/2.5.1/bundles/HikariCP.jar:/Users/brionsilva/Desktop/IIT/SDGP/Play/repository/com.googlecode.usc/jdbcdslog/1.0.6.2/jars/jdbcdslog.jar:/Users/brionsilva/Desktop/IIT/SDGP/Play/repository/com.h2database/h2/1.4.192/jars/h2.jar:/Users/brionsilva/Desktop/IIT/SDGP/Play/repository/tyrex/tyrex/1.0.1/jars/tyrex.jar:/Users/brionsilva/.ivy2/cache/org.hibernate.javax.persistence/hibernate-jpa-2.1-api/jars/hibernate-jpa-2.1-api-1.0.0.Final.jar:/Users/brionsilva/.ivy2/cache/org.mockito/mockito-core/jars/mockito-core-2.1.0.jar:/Users/brionsilva/.ivy2/cache/net.bytebuddy/byte-buddy/jars/byte-buddy-1.4.26.jar:/Users/brionsilva/.ivy2/cache/net.bytebuddy/byte-buddy-agent/bundles/byte-buddy-agent-1.4.26.jar:/Users/brionsilva/.ivy2/cache/org.objenesis/objenesis/jars/objenesis-2.4.jar:/Users/brionsilva/.ivy2/cache/org.hibernate/hibernate-core/jars/hibernate-core-5.2.5.Final.jar:/Users/brionsilva/.ivy2/cache/org.jboss.logging/jboss-logging/jars/jboss-logging-3.3.0.Final.jar:/Users/brionsilva/Desktop/IIT/SDGP/Play/repository/org.javassist/javassist/3.20.0-GA/bundles/javassist.jar:/Users/brionsilva/.ivy2/cache/antlr/antlr/jars/antlr-2.7.7.jar:/Users/brionsilva/.ivy2/cache/org.apache.geronimo.specs/geronimo-jta_1.1_spec/jars/geronimo-jta_1.1_spec-1.1.1.jar:/Users/brionsilva/.ivy2/cache/org.jboss/jandex/bundles/jandex-2.0.3.Final.jar:/Users/brionsilva/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-1.3.0.jar:/Users/brionsilva/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar:/Users/brionsilva/.ivy2/cache/org.hibernate.common/hibernate-commons-annotations/jars/hibernate-commons-annotations-5.0.1.Final.jar:/Users/brionsilva/.ivy2/cache/javax.enterprise/cdi-api/jars/cdi-api-1.1.jar:/Users/brionsilva/.ivy2/cache/javax.el/el-api/jars/el-api-2.2.jar:/Users/brionsilva/.ivy2/cache/org.jboss.spec.javax.interceptor/jboss-interceptors-api_1.1_spec/jars/jboss-interceptors-api_1.1_spec-1.0.0.Beta1.jar:/Users/brionsilva/Desktop/IIT/SDGP/Play/repository/javax.annotation/jsr250-api/1.0/jars/jsr250-api.jar:/Users/brionsilva/.ivy2/cache/org.hibernate/hibernate-entitymanager/jars/hibernate-entitymanager-5.1.0.Final.jar
+Scala compilation took 0.487579511 s
+Attempting to call com.sun.tools.javac.api.JavacTool@6d0809dd directly...
+Java compilation took 0.04107693 s
+Java analysis took 0.044277834 s
+Java compile + analysis took 0.090458197 s
+Invalidating /Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/target/scala-2.11/twirl/main/views/html/error.template.scala...
+Invalidating (transitively) by inheritance from /Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/target/scala-2.11/twirl/main/views/html/error.template.scala...
+Initial set of included nodes: Set(/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/target/scala-2.11/twirl/main/views/html/error.template.scala)
+Invalidated by transitive inheritance dependency: Set(/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/target/scala-2.11/twirl/main/views/html/error.template.scala)
+The /Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/target/scala-2.11/twirl/main/views/html/error.template.scala source file has the following regular definitions changed:
+	notify, format, wait, $asInstanceOf, productArity, equals, asInstanceOf, f, synchronized, _display_, $isInstanceOf, ref, canEqual, productPrefix, notifyAll, readResolve, isInstanceOf, <init>, apply, error, ==, clone, error_Scope0, copy, toString, !=, getClass, copy$default$1, render, ne, eq, productIterator, ##, finalize, productElement, hashCode.
+All member reference dependencies will be considered within this context.
+Invalidating /Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/target/scala-2.11/twirl/main/views/html/message.template.scala...
+Invalidating (transitively) by inheritance from /Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/target/scala-2.11/twirl/main/views/html/message.template.scala...
+Initial set of included nodes: Set(/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/target/scala-2.11/twirl/main/views/html/message.template.scala)
+Invalidated by transitive inheritance dependency: Set(/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/target/scala-2.11/twirl/main/views/html/message.template.scala)
+The /Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/target/scala-2.11/twirl/main/views/html/message.template.scala source file has the following regular definitions changed:
+	notify, format, wait, $asInstanceOf, productArity, equals, asInstanceOf, f, synchronized, _display_, $isInstanceOf, ref, canEqual, productPrefix, notifyAll, readResolve, isInstanceOf, <init>, apply, ==, clone, copy, message, toString, !=, getClass, copy$default$1, message_Scope0, render, ne, eq, productIterator, ##, finalize, productElement, hashCode.
+All member reference dependencies will be considered within this context.
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed 15-Mar-2017 03:06:09
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 20
+Evaluating tasks: *:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@3ed259a, check cycles: false
+Total time: 0 s, completed 15-Mar-2017 03:06:09
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@3c41d615, check cycles: false
+Total time: 0 s, completed 15-Mar-2017 03:06:09
+> server-post-command-cleanup
+> server-handle-next-server-request
+> test
+Evaluating tasks: test:test
+Running task... Cancel: sbt.server.ServerTaskCancellation@58d0a94c, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/conf/application.conf,/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/target/scala-2.11/classes/application.conf)
+	(/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/conf/logback.xml,/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/target/scala-2.11/classes/logback.xml)
+	(/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/conf/META-INF,/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/target/scala-2.11/classes/META-INF)
+	(/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/conf/routes,/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/target/scala-2.11/classes/routes)
+	(/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/conf/META-INF/persistence.xml,/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/target/scala-2.11/classes/META-INF/persistence.xml)
+
+Initial source changes: 
+	removed:Set()
+	added: Set(/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/test/AcceptanceTest.java, /Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/test/IntegrationTest.java, /Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/test/UnitTest.java)
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/test/AcceptanceTest.java, /Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/test/IntegrationTest.java, /Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/test/UnitTest.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/test/AcceptanceTest.java, /Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/test/IntegrationTest.java, /Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/test/UnitTest.java)
+
+Recompiling all 3 sources: invalidated sources (3) exceeded 50.0% of all sources
+Read from stdout: Compiling 3 Java sources to /Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/target/scala-2.11/test-classes...
+Compiling 3 Java sources to /Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/target/scala-2.11/test-classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@2e8f42fc directly...
+Read from stdout: /Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/test/UnitTest.java:24: cannot find symbol
+Read from stdout: symbol:   class PersonController
+Read from stdout: location: class UnitTest
+/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/test/UnitTest.java:24: cannot find symbol
+  symbol:   class PersonController
+  location: class UnitTest
+Read from stdout: PersonController
+PersonController
+Read from stdout: /Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/test/UnitTest.java:24: cannot find symbol
+Read from stdout: symbol:   class PersonController
+Read from stdout: location: class UnitTest
+/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/test/UnitTest.java:24: cannot find symbol
+  symbol:   class PersonController
+  location: class UnitTest
+Read from stdout: PersonController
+PersonController
+Read from stdout: /Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/test/UnitTest.java:32: method render in class views.html.index cannot be applied to given types;
+Read from stdout: required: java.lang.String
+Read from stdout: found: no arguments
+Read from stdout: reason: actual and formal argument lists differ in length
+/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/test/UnitTest.java:32: method render in class views.html.index cannot be applied to given types;
+  required: java.lang.String
+  found: no arguments
+  reason: actual and formal argument lists differ in length
+Read from stdout: views.html.index.render
+views.html.index.render
+Read from stdout: (test:compileIncremental) javac returned nonzero exit code
+(test:compileIncremental) javac returned nonzero exit code
+Total time: 5 s, completed 15-Mar-2017 03:06:14
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/brionsilva/Desktop/IIT/SDGP/Play%20Projects/play-java/}root/*:playForkConfig
+Evaluating tasks: *:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@29cf5cd9, check cycles: false
+Total time: 0 s, completed 15-Mar-2017 03:06:27
+> server-post-command-cleanup
+> server-handle-next-server-request
+> root/playForkNotifyStart http://localhost:9000
+Evaluating tasks: *:playForkNotifyStart
+Running task... Cancel: sbt.server.ServerTaskCancellation@1897a75f, check cycles: false
+Total time: 0 s, completed 15-Mar-2017 03:06:33
+> server-post-command-cleanup
+> server-handle-next-server-request

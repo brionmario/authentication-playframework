@@ -77,7 +77,7 @@ public class AuthenticationController extends Controller {
         userDB.add(new User(requestData.get("firstName"), requestData.get("lastName"),
                 requestData.get("email"), requestData.get("password")));
 
-        return ok("User Added Successfully");
+        return ok("Account was created successfully.");
     }
 
 
@@ -95,8 +95,8 @@ public class AuthenticationController extends Controller {
         String password = requestData.get("password");
 
         //string to store the name of the user to be displayed in the welcome page.
-        String fName = null;
-        String lName = null;
+        String fName;
+        String lName;
         String fullName = null;
 
         User loggeUuser = null;
@@ -114,11 +114,11 @@ public class AuthenticationController extends Controller {
         }
 
         if (isUserFound) {
-            
+
             return redirect(routes.AuthenticationController.homePage(fullName));
 
         }
-        return ok("No such user password combination found");
+        return ok("Sorry! We couldn't locate your account. Please try again.");
     }
 
 
