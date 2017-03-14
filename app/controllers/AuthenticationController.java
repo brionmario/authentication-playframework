@@ -7,7 +7,6 @@ import play.mvc.Controller;
 import play.mvc.Result;
 import javax.inject.Inject;
 import java.util.ArrayList;
-
 import static play.libs.Json.toJson;
 
 /**
@@ -145,7 +144,11 @@ public class AuthenticationController extends Controller {
 
     }
 
-
+    /**
+     * Converts the database to a jason
+     *
+     * @return
+     */
     public Result getUsers() {
         return ok(toJson(userDB).toString());
     }

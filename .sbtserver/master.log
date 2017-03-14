@@ -10636,3 +10636,166 @@ Copy resource mappings:
 Total time: 0 s, completed 15-Mar-2017 03:50:01
 > server-post-command-cleanup
 > server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@6c9e4226, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/app/controllers/AuthenticationController.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/app/controllers/AuthenticationController.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/app/controllers/AuthenticationController.java)
+
+Read from stdout: Compiling 1 Java source to /Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@1a875186 directly...
+Java compilation took 0.115820944 s
+Java analysis took 0.063722011 s
+Java compile + analysis took 0.184823726 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 0 s, completed 15-Mar-2017 04:42:40
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 25
+Evaluating tasks: *:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@656efabf, check cycles: false
+Total time: 0 s, completed 15-Mar-2017 04:42:40
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@2d92ef3c, check cycles: false
+Total time: 0 s, completed 15-Mar-2017 04:42:40
+> server-post-command-cleanup
+> server-handle-next-server-request
+> test
+Evaluating tasks: test:test
+Running task... Cancel: sbt.server.ServerTaskCancellation@1d0201e6, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/conf/application.conf,/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/target/scala-2.11/classes/application.conf)
+	(/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/conf/logback.xml,/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/target/scala-2.11/classes/logback.xml)
+	(/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/conf/META-INF,/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/target/scala-2.11/classes/META-INF)
+	(/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/conf/routes,/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/target/scala-2.11/classes/routes)
+	(/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/conf/META-INF/persistence.xml,/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/target/scala-2.11/classes/META-INF/persistence.xml)
+
+Initial source changes: 
+	removed:Set()
+	added: Set(/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/test/AcceptanceTest.java, /Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/test/IntegrationTest.java, /Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/test/UnitTest.java)
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/test/AcceptanceTest.java, /Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/test/IntegrationTest.java, /Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/test/UnitTest.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/test/AcceptanceTest.java, /Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/test/IntegrationTest.java, /Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/test/UnitTest.java)
+
+Recompiling all 3 sources: invalidated sources (3) exceeded 50.0% of all sources
+Read from stdout: Compiling 3 Java sources to /Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/target/scala-2.11/test-classes...
+Compiling 3 Java sources to /Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/target/scala-2.11/test-classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@e3d443d directly...
+Read from stdout: /Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/test/UnitTest.java:24: cannot find symbol
+Read from stdout: symbol:   class PersonController
+Read from stdout: location: class UnitTest
+/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/test/UnitTest.java:24: cannot find symbol
+  symbol:   class PersonController
+  location: class UnitTest
+Read from stdout: PersonController
+PersonController
+Read from stdout: /Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/test/UnitTest.java:24: cannot find symbol
+Read from stdout: symbol:   class PersonController
+Read from stdout: location: class UnitTest
+/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/test/UnitTest.java:24: cannot find symbol
+  symbol:   class PersonController
+  location: class UnitTest
+Read from stdout: PersonController
+PersonController
+Read from stdout: /Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/test/UnitTest.java:32: method render in class views.html.index cannot be applied to given types;
+Read from stdout: required: java.lang.String
+Read from stdout: found: no arguments
+Read from stdout: reason: actual and formal argument lists differ in length
+/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/test/UnitTest.java:32: method render in class views.html.index cannot be applied to given types;
+  required: java.lang.String
+  found: no arguments
+  reason: actual and formal argument lists differ in length
+Read from stdout: views.html.index.render
+views.html.index.render
+Read from stdout: (test:compileIncremental) javac returned nonzero exit code
+(test:compileIncremental) javac returned nonzero exit code
+Total time: 5 s, completed 15-Mar-2017 04:42:45
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/brionsilva/Desktop/IIT/SDGP/Play%20Projects/play-java/}root/*:playForkConfig
+Evaluating tasks: *:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@6c0a7a06, check cycles: false
+Total time: 0 s, completed 15-Mar-2017 04:42:58
+> server-post-command-cleanup
+> server-handle-next-server-request
+> root/playForkNotifyStart http://localhost:9000
+Evaluating tasks: *:playForkNotifyStart
+Running task... Cancel: sbt.server.ServerTaskCancellation@593ca2f, check cycles: false
+Total time: 0 s, completed 15-Mar-2017 04:43:04
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/brionsilva/Desktop/IIT/SDGP/Play%20Projects/play-java/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@1c13e06c, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/conf/application.conf,/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/target/scala-2.11/classes/application.conf)
+	(/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/conf/logback.xml,/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/target/scala-2.11/classes/logback.xml)
+	(/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/conf/META-INF,/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/target/scala-2.11/classes/META-INF)
+	(/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/conf/routes,/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/target/scala-2.11/classes/routes)
+	(/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/conf/META-INF/persistence.xml,/Users/brionsilva/Desktop/IIT/SDGP/Play Projects/play-java/target/scala-2.11/classes/META-INF/persistence.xml)
+Total time: 0 s, completed 15-Mar-2017 04:57:47
+> server-post-command-cleanup
+> server-handle-next-server-request
