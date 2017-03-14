@@ -5,10 +5,11 @@ GET     /assets/*file               controllers.Assets.versioned(path="/public",
 
 #My routes
 
-GET      /                           controllers.AuthenticationController.index()
-GET      /signup                     controllers.AuthenticationController.signup()
-GET      /home                       controllers.AuthenticationController.homePage(String)
-POST     /Users                      controllers.AuthenticationController.getUser
-POST     /User                       controllers.AuthenticationController.addUser()
-GET      /getUsers                   controllers.AuthenticationController.getUsers
+GET      /                                          controllers.AuthenticationController.index()
+GET      /signup                                    controllers.AuthenticationController.signup()
+GET      /message/:title/:heading/:message          controllers.AuthenticationController.messagePage(title : String,heading : String , message : String)
+GET      /home                                      controllers.AuthenticationController.homePage(String)
+POST     /Users                                     controllers.AuthenticationController.getUser
+POST     /User                                      controllers.AuthenticationController.addUser()
+GET      /getUsers                                  controllers.AuthenticationController.getUsers
 

@@ -1,10 +1,9 @@
-@(message: String)
+@(title : String , heading : String , message : String)
 
-@main("Home Page") {
+@main(title) {
 
   <html>
     <head>
-      <title>Login</title>
       <link rel="stylesheet" type="text/css" href='@routes.Assets.versioned("stylesheets/bootstrap.min.css")'>
       <link rel="stylesheet" type="text/css" href='@routes.Assets.versioned("stylesheets/play.css")'>
       <link rel="stylesheet" type="text/css" href='@routes.Assets.versioned("stylesheets/font-awesome.min.css")'>
@@ -18,11 +17,11 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <h1 class="text-center" >Howdy! @message</h1>
-            <h1 class="text-center login-title">Welcome to Play Framework Authentication Example by Brion Mario.</h1>
+            <h1 class="text-center" >@heading</h1>
+            <h1 class="text-center login-title">@message</h1>
             <br><br/>
-            <p class="text-center">Click <a href="https://github.com/brionsilva" target="_blank">
-              <span>Here</span></a> to Follow me on GitHub</p>
+            <p class="text-center">Click <a href="@routes.AuthenticationController.index()">
+              <span>Here</span></a> to go back to the Login Page</p>
           </div>
           <div class="row">
 

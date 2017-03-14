@@ -65,6 +65,19 @@ public class AuthenticationController extends Controller {
     }
 
     /**
+     * Renders a variable message page that can be used to display messages and feedback to the user.
+     *
+     * @param message The massage to be passed to the user
+     * @param heading The greeting or salutation
+     * @param title The title of the page
+     * @return Returns the message.scala.html page with the params
+     */
+    public Result messagePage(String title , String heading , String message){
+
+        return ok(views.html.message.render(title,heading,message));
+    }
+
+    /**
      * Method to add a new user to the databse
      * @return Returns a success message
      */
@@ -72,12 +85,17 @@ public class AuthenticationController extends Controller {
 
         DynamicForm requestData = formFactory.form().bindFromRequest();
 
+        //string to store the success message to the user
+        String success = "Your account was created successfully";
+
+
         //add the values posted by the form and create a new user.
         //P.S : data has to be passed according to the order of parameters taken by the model constructor.
         userDB.add(new User(requestData.get("firstName"), requestData.get("lastName"),
                 requestData.get("email"), requestData.get("password")));
 
-        return ok("Account was created successfully.");
+        //return ok("Account was created successfully.");
+        return redirect(routes.AuthenticationController.messagePage("Success" , "Congratulations!" , success));
     }
 
 
@@ -102,6 +120,9 @@ public class AuthenticationController extends Controller {
         User loggeUuser = null;
         boolean isUserFound = false;
 
+        //custom error message to be shown to the user
+        String errorMessage = "We couldn't locate your account. Please try again.";
+
         //iterating through the user database
         for (User user : userDB) {
             if (user.getEmail().equals(email) && user.getPassword().equals(password)) {
@@ -118,7 +139,10 @@ public class AuthenticationController extends Controller {
             return redirect(routes.AuthenticationController.homePage(fullName));
 
         }
-        return ok("Sorry! We couldn't locate your account. Please try again.");
+
+        //return ok("Sorry! We couldn't locate your account. Please try again.");
+        return redirect(routes.AuthenticationController.messagePage("Error" , "Sorry!" ,errorMessage));
+
     }
 
 
